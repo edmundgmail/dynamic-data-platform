@@ -64,7 +64,6 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
-import { DataExplorerComponent } from './views/components/data-explorer/data-explorer.component';
 
 @NgModule({
   imports: [
@@ -78,8 +77,7 @@ import { DataExplorerComponent } from './views/components/data-explorer/data-exp
     AppComponent,
     ...APP_CONTAINERS,
     ...APP_COMPONENTS,
-    ...APP_DIRECTIVES,
-    DataExplorerComponent
+    ...APP_DIRECTIVES
   ],
   providers: [{
     provide: LocationStrategy,
