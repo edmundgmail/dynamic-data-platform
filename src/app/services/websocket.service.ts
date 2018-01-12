@@ -2,6 +2,8 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {Subject} from 'rxjs/Subject';
 import {Observer} from "rxjs/Observer";
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/filter';
 
 @Injectable()
 export class WebSocketService {

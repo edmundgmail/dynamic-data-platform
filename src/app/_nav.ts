@@ -9,13 +9,13 @@ export const navigation = [
     }
   },
   {
-    name: 'Components',
+    name: 'Create Snippets',
     url: '/components',
     icon: 'icon-puzzle',
     children: [
       {
-        name: 'Buttons',
-        url: '/components/buttons',
+        name: 'SQL Snippet',
+        url: '/components/sqlsnippet',
         icon: 'icon-puzzle'
       }
       ]
