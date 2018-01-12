@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   templateUrl: 'buttons.component.html'
 })
 export class ButtonsComponent {
-
-  constructor() { }
+  ws;
+  constructor() {
+    this.ws = new WebSocket("ws://localhost:9000/ws")
+  }
 
 }

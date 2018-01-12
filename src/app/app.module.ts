@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 
 // Import containers
 import {
+  WebSocketService
+} from './services';
+
+// Import containers
+import {
   FullLayoutComponent,
   SimpleLayoutComponent
 } from './containers';
