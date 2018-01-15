@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {WebSocketService} from '../../services/websocket.service';
 import {Subject} from 'rxjs/Subject';
 import {Message} from "../../models/message";
-
+import {TabComponent} from "../../components/tabs/tab.component";
+import {TabsComponent} from "../../components/tabs/tabs.component";
 
 const CHAT_URL = "ws://localhost:5000/ws";
 
@@ -11,6 +12,8 @@ const CHAT_URL = "ws://localhost:5000/ws";
 })
 
 export class SQLSnippetComponent {
+  @ViewChild(TabsComponent) tabsComponent;
+
 
   messages: Subject<Message>  = new Subject<Message>();
 

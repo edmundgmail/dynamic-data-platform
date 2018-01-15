@@ -69,6 +69,9 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import {DynamicTabsDirective} from "./components/tabs/dynamic-tabs.directive";
+import {TabComponent} from "./components/tabs/tab.component";
+import {TabsComponent} from "./components/tabs/tabs.component";
 
 @NgModule({
   imports: [
@@ -82,7 +85,10 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     AppComponent,
     ...APP_CONTAINERS,
     ...APP_COMPONENTS,
-    ...APP_DIRECTIVES
+    ...APP_DIRECTIVES,
+    DynamicTabsDirective,
+    TabComponent,
+    TabsComponent
   ],
   providers: [{
     provide: LocationStrategy,
