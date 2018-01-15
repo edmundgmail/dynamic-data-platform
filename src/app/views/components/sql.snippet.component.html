@@ -2,10 +2,12 @@
   <button (click)="addTab()">Add new tab</button>
   <div class="container">
     <!-- Nav tabs -->
-    <tabset> <tab *ngFor="let tab = tabs" [heading]="tab.heading">
-      {{tab.content}}
-    </tab>
-    </tabset>
+    <my-tabs>
+      <my-tab [tabTitle]="'People'">
+        <h3>List of People</h3>
+        <hr />
+      </my-tab>
+    </my-tabs>
 
   </div>
 </div>
